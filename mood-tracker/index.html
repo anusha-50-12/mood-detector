@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Daily Mood Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🧠 Daily Mood Tracker</h1>
+
+    <form id="moodForm">
+      <label for="emoji">Choose Your Mood:
+        <select id="emoji" required>
+          <option value="">Select</option>
+          <option value="😊">😊 Happy</option>
+          <option value="😞">😞 Sad</option>
+          <option value="😡">😡 Angry</option>
+          <option value="😌">😌 Calm</option>
+          <option value="😴">😴 Tired</option>
+        </select>
+      </label>
+
+      <label for="note">Note:
+        <textarea id="note" placeholder="What's on your mind?"></textarea>
+      </label>
+
+      <button type="submit">Submit</button>
+      <button type="button" id="clearAll" class="secondary">Clear All</button>
+    </form>
+
+    <h2>Past Entries</h2>
+    <ul id="entries"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
